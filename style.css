@@ -1,0 +1,115 @@
+body {
+    background: white; /* try type yellow */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#parcontainer {
+    width: 500px;
+    height: 750px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerone {
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+}
+
+#containertwo {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#containerthree {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
+}
+.phase1 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+
+button {
+    margin-top: 5%;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    border: none;
+    border-radius: 25px;
+}
+
+#myCanvas { 
+    background:white;
+    border:1px solid white; 
+}
+
+.button2 {
+    background-color: #f5eded;
+}
+
+.imgcontainer {
+    color: white;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.centeredwin {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+}
+
+.centerednwin {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.phase2 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
