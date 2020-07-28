@@ -52,7 +52,7 @@ function counter () {
 
 function quit() {
     var b = document.getElementById('numBalls').innerHTML,
-        url = 'qikoutian.github.io/phase2.html?name=' + encodeURIComponent(b);
+        url = 'yusuwang912.github.io/phase2.html?name=' + encodeURIComponent(b);
     document.location.href = url;
 }
 

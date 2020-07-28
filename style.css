@@ -52,7 +52,7 @@ body {
     text-align: center;
     line-height: 100px;
 }
-.phase1 {
+.phase {
     position: absolute;
     top: 1%;
     left: 50%;
@@ -106,10 +106,3 @@ button {
     transform: translate(-50%, -50%);
     color: black;
 }
-
-.phase2 {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
