@@ -3,7 +3,7 @@ function ballDrop (obj) {
     obj.disabled = true;
     setTimeout(function() {
         obj.disabled = false;
-    }, 2000);
+    }, 3000);
     const FPS = 165;
     var bs = 30;
     var bx, by;
