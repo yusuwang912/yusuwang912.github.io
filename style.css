@@ -127,27 +127,3 @@ button {
     transform: translate(-50%, -50%);
     color: black;
 }
-
-.reminder2 {
-    position: absolute;
-    top: 55%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
-
-.reminder3 {
-    position: absolute;
-    top: 60%;
-    left: 34%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
-
-.notSee {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-}
