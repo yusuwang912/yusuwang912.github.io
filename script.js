@@ -3,7 +3,7 @@ function ballDrop (obj) {
     obj.disabled = true;
     setTimeout(function() {
         obj.disabled = false;
-    }, 3000);
+    }, 1000);
     const FPS = 165;
     var bs = 30;
     var bx, by;
@@ -48,11 +48,15 @@ var numBalls = 1;
 function counter () {
     numBalls += 1;
     document.getElementById("numBalls").innerHTML = numBalls;
+    var pBalls = numBalls / (numBalls + 30);
+    pBalls = pBalls.toFixed(2)*100 + "%"
+    document.getElementById("pBalls").innerHTML = pBalls;
 }
+
 
 function quit() {
     var b = document.getElementById('numBalls').innerHTML,
-        url = 'yusuwang912.github.io/phase2.html?name=' + encodeURIComponent(b);
+        url = 'qikoutian.github.io/phase2.html?name=' + encodeURIComponent(b);
     document.location.href = url;
 }
 
@@ -67,13 +71,13 @@ window.onload = function () {
     document.getElementById('numBalls').innerHTML = data.name;
 }
 
+
 function randomWin () {
 
-    var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 50)));
-
+    var chance = Math.floor((Math.random() * ( parseInt( document.getElementById('numBalls').innerHTML ) + 30)));
     if( chance < document.getElementById('numBalls').innerHTML ) {
-        document.getElementById('win').innerHTML = "You Won. Please add 09 at the end of your study code";
+        document.getElementById('win').innerHTML = "You Won. You will receive the base payment plus the winning amount as a bonus. Please add 07 at the end of your study code.";
     } else {
-        document.getElementById('win').innerHTML = "Sorry. You Didn't Win.";
+        document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment.";
     }
 } //

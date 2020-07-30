@@ -64,7 +64,7 @@ button {
     margin-top: 5%;
     line-height: 60px;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0 30px;
     border: none;
     border-radius: 25px;
 }
@@ -76,11 +76,15 @@ button {
 
 .button2 {
     background-color: #f5eded;
+    padding: 0 20px;
+    line-height: 30px;
+    margin-left: 70%;
+    margin-top: 10%
 }
 
 .imgcontainer {
     color: white;
-    width: 500px;
+    width: 1100px;
     height: 450px;
     position: absolute;
     display: flex;
@@ -102,8 +106,48 @@ button {
 
 .centerednwin {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
+}
+
+.chanceOut {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.reminder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.reminder2 {
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.reminder3 {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.notSee {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
 }
