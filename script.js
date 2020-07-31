@@ -49,7 +49,7 @@ function counter () {
     numBalls += 1;
     document.getElementById("numBalls").innerHTML = numBalls;
     var pBalls = numBalls / (numBalls + 30);
-    pBalls = Math.round(pBalls*100) + "%"
+    pBalls = Math.round(pBalls*100) + "%";
     document.getElementById("pBalls").innerHTML = pBalls;
 }
 
