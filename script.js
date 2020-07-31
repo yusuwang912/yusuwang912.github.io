@@ -49,7 +49,7 @@ function counter () {
     numBalls += 1;
     document.getElementById("numBalls").innerHTML = numBalls;
     var pBalls = numBalls / (numBalls + 30);
-    pBalls = pBalls.toFixed(2)*100 + "%"
+    pBalls = Math.round(pBalls*100) + "%"
     document.getElementById("pBalls").innerHTML = pBalls;
 }
 
@@ -80,4 +80,4 @@ function randomWin () {
     } else {
         document.getElementById('win').innerHTML = "Sorry. You Didn't Win. But you will still receive the base payment.";
     }
-} //
+} 
