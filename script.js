@@ -1,47 +1,25 @@
-function ballDrop (obj) {
+function fall(obj){
     counter();
     obj.disabled = true;
     setTimeout(function() {
         obj.disabled = false;
     }, 3000);
-    const FPS = 165;
-    var bs = 30;
-    var bx, by;
-    var xv, yv;
-    var canvas, context;
-
-    canvas = document.getElementById("myCanvas");
-    context = canvas.getContext("2d");
-    
-    bx = canvas.width / 2;
-    by = 0;
-    
-    xv = 0;
-    yv = 15;
-    
-    function update() {
-        bx += xv;
-        by += yv;
-
-        context.fillStyle = "white";
-        context.fillRect(0, 0, canvas.width, canvas.height);
-        context.clearRect(0,0,400,400);
-        context.beginPath();
-        //context.fillStyle = "yellow";
-        //context.fillRect(bx - bs / 2, by - bs / 2, bs, bs);
-        context.fillStyle="#FF0000"
-        context.arc(bx,by,10,0,Math.PI*2,true);
-        context.closePath();
-        context.fill();
+    let static = document.getElementById("staticBtn");
+    let live = document.getElementById("liveBtn");
+        static.style.visibility = 'hidden';
+        live.style.visibility = 'visible';
+    live.src = "ball.gif";
+    var startTime = new Date().getTime();
+    var interval = setInterval(function(){
+            if(new Date().getTime() - startTime > 500){
+                clearInterval(interval);
+                static.style.visibility = 'visible';
+                live.style.visibility = 'hidden';
+            }
+           
+        }, 500);
     }
-    setInterval(update, 50);
 
-    // if( by > canvas.height ) {
-    //     by = 0;
-    //     context.fillStyle = "black";
-    //     context.fillRect(0, 0, canvas.width, canvas.height);
-    // }
-}
 
 var numBalls = 1;
 

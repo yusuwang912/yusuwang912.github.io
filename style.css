@@ -67,6 +67,11 @@ body {
     color: black;
 }
 
+.liveTrash {
+    visibility: hidden;
+    position: absolute;
+    top: 7%;
+}
 button {
     margin-top: 5%;
     line-height: 60px;
@@ -76,10 +81,6 @@ button {
     border-radius: 25px;
 }
 
-#myCanvas { 
-    background:white;
-    border:1px solid white; 
-}
 
 .button2 {
     background-color: #f5eded;
